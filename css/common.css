@@ -19,30 +19,6 @@ footer {
     background-color: #76195D;
 } */
 
-.nav-link {
-    font-family: "Eras ITC", "Eras Light ITC", sans-serif;
-    background: linear-gradient(90deg, #F0A62D 0%, #FFF57B 48.43%, #E3A630 100%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    font-size: 15;
-    font-weight: 500;
-    line-height: 21px;
-    letter-spacing: 0em;
-    text-align: left;
-}
-
-.navbar-nav .nav-link:hover {
-    font-weight: 650;
-}
-
-.nav-item {
-    margin-right: 28px;
-}
-
-#nav-option-btn {
-    background-color: aliceblue;
-}
-
 .dropdown-item {
     font-family: "Eras ITC", "Eras Light ITC", sans-serif !important;
 }
@@ -50,28 +26,6 @@ footer {
 .dropdown-item:hover {
     background-color: #76195D !important;
     color: white !important;
-}
-
-#navbar {
-    background-color: #76195D;
-    position: -webkit-sticky;
-    position: sticky;
-    top: 0;
-    z-index: 1000; 
-    /* Set a higher z-index value */
-    /* box-shadow: 0px 8px 10px #888888; */
-}
-
-#navbarLogo {
-    opacity: 0;
-    transition: opacity 0.5s ease-in-out;
-    /* display: none !important; */
-}
-
-.navbar-brand.show-logo #navbarLogo {
-    opacity: 1;
-    /* display: block !important; */
-    /* transition: opacity 0.5s ease-in-out; */
 }
 
 .social-icon>a>img,
@@ -108,23 +62,9 @@ footer>div>.row {
     margin-top: 25px;
 }
 
-.navbar-toggler {
-    border-color: transparent !important;
-}
-
-.navbar-toggler:focus {
-    box-shadow: none !important;
-}
-
-.navbar-toggler>span>img {
-    margin-top: 12px;
-    width: 48px;
-}
-
 .background {
-    background-image: url('/assets/icons/doodle.svg');
+    background-image: url('/assets/images/doodle.png');
     background-size: auto;
-    /* or contain, depending on your needs */
     background-repeat: repeat;
 }
 
@@ -161,3 +101,57 @@ footer>div>.row {
 .footer img {
     width: 48% !important;
 } */
+
+.nav-link {
+    font-family: "Eras ITC", "Eras Light ITC", sans-serif;
+    background: linear-gradient(90deg, #F0A62D 0%, #FFF57B 48.43%, #E3A630 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 15;
+    font-weight: 500;
+    line-height: 21px;
+    letter-spacing: 0em;
+    text-align: left;
+}
+
+.navbar-nav .nav-link:hover {
+    font-weight: 650;
+}
+
+.nav-item {
+    margin-right: 28px;
+}
+
+#nav-option-btn {
+    background-color: aliceblue;
+}
+
+.navbar-toggler {
+    border-color: transparent !important;
+}
+
+.navbar-toggler:focus {
+    box-shadow: none !important;
+}
+
+.navbar-toggler>span>img {
+    margin-top: 12px;
+    width: 48px;
+}
+
+#navbar {
+    background-color: #76195D;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+#navbarLogo {
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+}
+
+.navbar-brand.show-logo #navbarLogo {
+    opacity: 1;
+}
