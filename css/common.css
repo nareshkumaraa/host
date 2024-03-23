@@ -6,7 +6,7 @@ footer {
 .header_line {
     height: 1px;
     background-image: linear-gradient(to right, #F0A62D 0%, #FFF57B 48.43%, #E3A630 100%);
-    margin-top: 21px;
+    margin-top: 12px;
 }
 
 #main_logo>img {
