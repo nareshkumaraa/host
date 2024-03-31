@@ -3,6 +3,11 @@ footer {
     background-color: #76195D;
 }
 
+#logo_row>#main_logo {
+    padding-right: 0px !important;
+    padding-left: 0px !important;
+}
+
 .header_line {
     height: 1px;
     background-image: linear-gradient(to right, #F0A62D 0%, #FFF57B 48.43%, #E3A630 100%);
@@ -42,8 +47,8 @@ footer {
 }
 
 .social-icon {
-    background-color: rgba(255, 255, 255, 0.1);
-    border-radius: 25px;
+    /* background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 25px; */
     margin-right: 5px;
     margin-left: 5px;
 }

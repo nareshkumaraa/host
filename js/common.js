@@ -1,15 +1,46 @@
+var navbarButton = document.getElementById("navbarButton");
+var navbarDropdown = document.getElementById("navbarNavDropdown");
+// var expertiseDropdownButton = document.getElementsByClassName("expertiseDropdownButton");
+var expertiseDropdownButton = document.getElementById("navbarDropdownMenuLink");
+
+
 window.addEventListener('load', (event) => {
     headerLogoValidator();
 })
 
+// expertiseDropdownButton.addEventListener('click', function (e) {
+//     e.preventDefault();
+// });
 
 window.addEventListener('scroll', function () {
     headerLogoValidator();
 });
 
+
+
 function headerLogoValidator() {
     var scrollY = window.scrollY;
     var navbarBrand = document.querySelector('.navbar-brand');
+
+    // navbarButton.classList.add("collapsed");
+    // navbarDropdown.classList.remove("show");
+
+    //var isNavbarOpen = navbarDropdown.classList.contains('show');
+    // if (navbarDropdown.classList.contains("show") && (!navbarButton.classList.contains("collapsed"))) {
+    //     var bootstrapCollapse = new bootstrap.Collapse(navbarDropdown, {
+    //         toggle: false // Don't animate the collapse
+    //     });
+    //     bootstrapCollapse.hide(); // Hide the navbar with animation
+    // }
+
+    // console.log('scrolling number: ' + scrollY);
+
+    // if (navbarDropdown.classList.contains("show") && (!navbarButton.classList.contains("collapsed"))) {
+    //     // if(expertiseDropdownButton.classList.contains("show") && !(scrollY > 0)){
+
+    //     // }
+    //     navbarButton.click();
+    // }
     // var navbarAnchorTag = ;
 
     if (scrollY > 44) { // Adjust the scroll threshold as needed
