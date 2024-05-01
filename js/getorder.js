@@ -35,27 +35,14 @@ var attachments = [];
 // }
 
 changeImage = (img) => {
-    //console.log("img", img);
     img.src = restoreProcessColor(img.id);
 }
 
 restoreImage = (img) => {
-    //console.log("img", img);
     img.src = changeProcessColor(img.id);
 }
 
 function changeProcessColor(ID) {
-    // var proceduresValue;
-    // if (ID == "stepone") {
-    //     proceduresValue = "assets/getorderprocess/stepone_white.png";
-    // } else if (ID == "steptwo") {
-    //     proceduresValue = "assets/getorderprocess/steptwo_white.png";
-    // } else if (ID == "stepthree") {
-    //     proceduresValue = "assets/getorderprocess/stepthree_white.png";
-    // } else if (ID == "stepfour") {
-    //     proceduresValue = "assets/getorderprocess/stepfour_white.png";
-    // }
-
     switch (ID) {
         case "stepone":
             return "assets/getorderprocess/stepone_white.png";
@@ -66,7 +53,6 @@ function changeProcessColor(ID) {
         case "stepfour":
             return "assets/getorderprocess/stepfour_white.png";
     }
-    //return proceduresValue;
 }
 
 restoreProcessColor = (ID) => {
