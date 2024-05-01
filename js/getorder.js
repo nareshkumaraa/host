@@ -35,16 +35,16 @@ var attachments = [];
 // }
 
 changeImage = (img) => {
-    console.log("img", img);
+    //console.log("img", img);
     img.src = restoreProcessColor(img.id);
 }
 
 restoreImage = (img) => {
-    console.log("img", img);
+    //console.log("img", img);
     img.src = changeProcessColor(img.id);
 }
 
-changeProcessColor = (ID) => {
+function changeProcessColor (ID) {
     var proceduresValue;
     if(ID == "stepone"){
         proceduresValue = "assets/getorderprocess/stepone_white.png";
