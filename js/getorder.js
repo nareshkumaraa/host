@@ -28,6 +28,51 @@ var attachments = [];
 //         })
 // })()
 
+
+// function changeImage(container) {
+//     var img = container.querySelector('img');
+//     img.src = "assets/getorderprocess/step1_purple.png";
+// }
+
+changeImage = (img) => {
+    console.log("img", img);
+    img.src = restoreProcessColor(img.id);
+}
+
+restoreImage = (img) => {
+    console.log("img", img);
+    img.src = changeProcessColor(img.id);
+}
+
+changeProcessColor = (ID) => {
+    var proceduresValue;
+    if(ID == "stepone"){
+        proceduresValue = "assets/getorderprocess/stepone_white.png";
+    } else if(ID == "steptwo") {
+        proceduresValue = "assets/getorderprocess/steptwo_white.png";
+    } else if(ID == "stepthree") {
+        proceduresValue = "assets/getorderprocess/stepthree_white.png";
+    } else if(ID == "stepfour") {
+        proceduresValue = "assets/getorderprocess/stepfour_white.png";
+    }
+    console.log("procesuresValue", proceduresValue);
+    return proceduresValue;
+}
+
+restoreProcessColor = (ID) => {
+    var proceduresValue;
+    if(ID == "stepone"){
+        proceduresValue = "assets/getorderprocess/stepone_purple.png";
+    } else if(ID == "steptwo") {
+        proceduresValue = "assets/getorderprocess/steptwo_purple.png";
+    } else if(ID == "stepthree") {
+        proceduresValue = "assets/getorderprocess/stepthree_purple.png";
+    } else if(ID == "stepfour") {
+        proceduresValue = "assets/getorderprocess/stepfour_purple.png";
+    }
+    return proceduresValue;
+}
+
 document.addEventListener('DOMContentLoaded', function () {
     // Your JavaScript code here
     console.log('DOM fully loaded and ready for manipulation');

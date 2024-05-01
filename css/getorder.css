@@ -64,3 +64,34 @@ form>.row {
         font-weight: 400;
     }
 }
+
+/* #step1 {
+    background-image: url("/assets/getorderprocess/step1_white.png");
+    height: 150px;
+    width: 100%;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    padding: 0%;
+    transition: background-image 0.3s ease;
+
+}
+
+#step1:hover {
+    background-image: url("/assets/getorderprocess/step2_purple.png");
+    height: 150px;
+    width: 100%;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    padding: 0%;
+} */
+
+.orderProcess > img {
+    /* width: 72%; */
+    height: 68%;
+}
+
+.orderProcess {
+    display: flex;
+}

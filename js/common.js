@@ -16,12 +16,21 @@ window.addEventListener('scroll', function () {
     headerLogoValidator();
 });
 
-
+//let initialScrollPosition = null;
 
 function headerLogoValidator() {
     var scrollY = window.scrollY;
     var navbarBrand = document.querySelector('.navbar-brand');
 
+    //console.log("current scroll postion: ", scrollY);
+
+    // if (initialScrollPosition === null) {
+    //     initialScrollPosition = window.scrollY;
+    // } else if (window.scrollY - initialScrollPosition >= 200) {
+    //     console.log('User scrolled 200 pixels from the initial position.');
+    //     // Reset initial scroll position to null to stop further checking
+    //     initialScrollPosition = null;
+    // }
     // navbarButton.classList.add("collapsed");
     // navbarDropdown.classList.remove("show");
 
