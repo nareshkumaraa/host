@@ -44,30 +44,40 @@ restoreImage = (img) => {
     img.src = changeProcessColor(img.id);
 }
 
-function changeProcessColor (ID) {
-    var proceduresValue;
-    if(ID == "stepone"){
-        proceduresValue = "assets/getorderprocess/stepone_white.png";
-    } else if(ID == "steptwo") {
-        proceduresValue = "assets/getorderprocess/steptwo_white.png";
-    } else if(ID == "stepthree") {
-        proceduresValue = "assets/getorderprocess/stepthree_white.png";
-    } else if(ID == "stepfour") {
-        proceduresValue = "assets/getorderprocess/stepfour_white.png";
+function changeProcessColor(ID) {
+    // var proceduresValue;
+    // if (ID == "stepone") {
+    //     proceduresValue = "assets/getorderprocess/stepone_white.png";
+    // } else if (ID == "steptwo") {
+    //     proceduresValue = "assets/getorderprocess/steptwo_white.png";
+    // } else if (ID == "stepthree") {
+    //     proceduresValue = "assets/getorderprocess/stepthree_white.png";
+    // } else if (ID == "stepfour") {
+    //     proceduresValue = "assets/getorderprocess/stepfour_white.png";
+    // }
+
+    switch (ID) {
+        case "stepone":
+            return "assets/getorderprocess/stepone_white.png";
+        case "steptwo":
+            return "assets/getorderprocess/steptwo_white.png";
+        case "stepthree":
+            return "assets/getorderprocess/stepthree_white.png";
+        case "stepfour":
+            return "assets/getorderprocess/stepfour_white.png";
     }
-    console.log("procesuresValue", proceduresValue);
-    return proceduresValue;
+    //return proceduresValue;
 }
 
 restoreProcessColor = (ID) => {
     var proceduresValue;
-    if(ID == "stepone"){
+    if (ID == "stepone") {
         proceduresValue = "assets/getorderprocess/stepone_purple.png";
-    } else if(ID == "steptwo") {
+    } else if (ID == "steptwo") {
         proceduresValue = "assets/getorderprocess/steptwo_purple.png";
-    } else if(ID == "stepthree") {
+    } else if (ID == "stepthree") {
         proceduresValue = "assets/getorderprocess/stepthree_purple.png";
-    } else if(ID == "stepfour") {
+    } else if (ID == "stepfour") {
         proceduresValue = "assets/getorderprocess/stepfour_purple.png";
     }
     return proceduresValue;
