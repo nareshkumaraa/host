@@ -87,11 +87,56 @@ form>.row {
     padding: 0%;
 } */
 
-.orderProcess > img {
+.orderProcess>img {
     /* width: 72%; */
     height: 68%;
 }
 
 .orderProcess {
     display: flex;
+}
+
+#stepone,
+#steptwo,
+#stepthree,
+#stepfour {
+    width: 100%;
+    height: 200px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    transition: background-image 0.5s ease-in-out;
+    margin: 12px;
+}
+
+#stepone {
+    background-image: url('/assets/getorderprocess/stepone_white.png');
+}
+
+#stepone:hover {
+    background-image: url('/assets/getorderprocess/stepone_purple.png');
+}
+
+#steptwo {
+    background-image: url('/assets/getorderprocess/steptwo_white.png');
+}
+
+#steptwo:hover {
+    background-image: url('/assets/getorderprocess/steptwo_purple.png');
+}
+
+#stepthree {
+    background-image: url('/assets/getorderprocess/stepthree_white.png');
+}
+
+#stepthree:hover {
+    background-image: url('/assets/getorderprocess/stepthree_purple.png');
+}
+
+#stepfour {
+    background-image: url('/assets/getorderprocess/stepfour_white.png');
+}
+
+#stepfour:hover {
+    background-image: url('/assets/getorderprocess/stepfour_purple.png');
 }
