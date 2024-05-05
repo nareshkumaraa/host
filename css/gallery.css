@@ -1,0 +1,108 @@
+#topimage>img {
+    padding: 0px;
+    margin: 0px;
+}
+
+#topimage {
+    position: relative;
+    text-align: center;
+    color: white;
+}
+
+.centered {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: clamp(16px, 5vw, 48px);
+    padding: 28px 4px;
+    border: 3px solid #76195D;
+    width: 40%;
+    font-family: "Eras ITC", "Eras Light ITC", sans-serif;
+}
+
+.threedModelMenuImg>div>img {
+    width: 100% !important;
+}
+
+/* .example {
+    position: relative;
+}
+
+.example p {
+    position: absolute;
+    top: 96%;
+    left: 8%;
+    transform: translate(-50%, -50%);
+    margin: 0;
+    padding: 0;
+    color: white;
+    font-size: 2em;
+    font-family: Quicksand, sans-serif;
+} */
+
+/* .example img {
+    width: 100%;
+} */
+
+/* .image-container {
+    position: relative;
+}
+
+.image-container > img {
+    width: 100%;
+}
+
+.image-text {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    margin: 0;
+    padding: 10px;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: black;
+    font-size: 16px;
+    width: 100%;
+}
+
+@media (max-width: 767px) {
+    .image-text {
+        font-size: 16px;
+        padding: 5px;
+    }
+} */
+
+/* .gallery_menu_text{
+    font-weight: bolder;
+} */
+
+
+.galleryMenuParentDiv {
+    display: flex;
+    justify-content: center;
+    margin: 4%;
+}
+
+.galleryMenuChildDiv {
+    position: relative;
+}
+
+.galleryMenuText {
+    position: absolute;
+    bottom: 8%;
+    left: 12%;
+    margin: 10px;
+    color: white;
+    font-weight: bolder;
+}
+
+@media (max-width: 767px) {
+    #galleryMenuSecondRow {
+        justify-content: center !important;
+    }
+}
+
+
+#moreBtnRow{
+    display: flex !important;
+}

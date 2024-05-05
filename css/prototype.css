@@ -1,0 +1,86 @@
+#topimage>img {
+    padding: 0px;
+    margin: 0px;
+}
+
+#topimage {
+    position: relative;
+    text-align: center;
+    color: white;
+}
+
+.centered {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: clamp(16px, 5vw, 48px);
+    padding: 28px 4px;
+    border: 3px solid #76195D;
+    width: 40%;
+    font-family: "Eras ITC", "Eras Light ITC", sans-serif;
+}
+
+#mainheading {
+    font-family: "Eras ITC", "Eras Light ITC", sans-serif;
+    color: #76195D;
+    font-size: clamp(24px, 5vw, 36px);
+    position: relative;
+    display: inline-block; /* Ensure inline-block so ::after can be positioned relative to it */
+}
+
+/* Style for the underline */
+#mainheading::after {
+    content: ''; /* Add content to the pseudo-element */
+    position: absolute;
+    bottom: -5px; /* Adjust the distance of the underline from the text */
+    left: 50%; /* Align the underline to the center */
+    transform: translateX(-50%); /* Center the underline horizontally */
+    width: 48%; /* Set the width of the underline */
+    height: 1.5px; /* Set the height of the underline */
+    background-color: #76195D; /* Color of the underline */
+}
+
+.contents {
+    font-family: Inter;
+    font-size: clamp(12px,8vw,16px);
+    line-height: 32px;
+    text-align: left;
+    color: #010101
+}
+
+hr {
+    color: #76195D;
+    height: 1.5px !important;
+    opacity: 1 !important;
+}
+
+.container > .row{
+    margin-top: 20px;
+}
+
+.threedModelMenuImg > div > img {
+    width: 100%;
+    /* height: 30px; */
+}
+
+#seeMoreButton {
+    display: flex !important;
+}
+
+#seeMoreBtn {
+    background: #76195D;
+    border: none !important;
+    color: white;
+    /* font-family: "Eras ITC", "Eras Light ITC", sans-serif !important; */
+    font-family: "Inter", Arial, sans-serif !important;
+    font-weight: 500;
+    padding: 8px 28px;
+    margin-top: 12px;
+}
+
+#seeMoreBtn:focus,
+#seeMoreBtn:active {
+    border-color: none !important;
+    box-shadow: none !important;
+}
