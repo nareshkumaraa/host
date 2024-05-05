@@ -103,6 +103,23 @@
 }
 
 
-#moreBtnRow{
+#moreBtnRow {
     display: flex !important;
+}
+
+#seeMoreBtn {
+    background: #76195D;
+    border: none !important;
+    color: white;
+    /* font-family: "Eras ITC", "Eras Light ITC", sans-serif !important; */
+    font-family: "Inter", Arial, sans-serif !important;
+    font-weight: 500;
+    padding: 8px 28px;
+    margin-top: 12px;
+}
+
+#seeMoreBtn:focus,
+#seeMoreBtn:active {
+    border-color: none !important;
+    box-shadow: none !important;
 }
